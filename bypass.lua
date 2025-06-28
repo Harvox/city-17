@@ -46,6 +46,8 @@ local function Handshake()
     return Success, Result
 end
 
+getgenv().Bypass_Init = true
+
 while true do 
     task.wait(math.random(3, 5))
     local Success, Result = Handshake()
